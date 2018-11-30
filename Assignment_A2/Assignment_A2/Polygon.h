@@ -7,6 +7,9 @@ public:
 	Polygon();
 	~Polygon();
 
+	string getType(); //Overrides the Shape function with this.
+
+
 private:
 
 };

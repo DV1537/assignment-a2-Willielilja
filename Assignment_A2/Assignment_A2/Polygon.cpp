@@ -10,3 +10,8 @@ Polygon::Polygon()
 Polygon::~Polygon()
 {
 }
+
+string Polygon::getType()
+{
+
+}
