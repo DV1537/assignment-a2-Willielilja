@@ -10,7 +10,10 @@ int main()
 {
 
 	Polygon* foo = new Polygon();
-	foo = new Polygon[6];
+	foo = new Polygon[];
+
+	
+	
 
 
 	return 0;
