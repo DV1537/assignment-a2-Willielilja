@@ -1,0 +1,21 @@
+#pragma once
+#include "Shape.h"
+
+class Polygon : public Shape
+{
+public:
+	Polygon();
+	~Polygon();
+
+	string getType(); //Overrides the Shape function with this local function.
+					  //Easier to return the shape in a string that is attatched to function.
+	int circumference(); //Overrides the circumference function.
+						 //This will make simple use of the array sent with the funciton
+	int position();
+
+private:
+	int *vertices;
+	string type;
+	int cap;
+
+};
