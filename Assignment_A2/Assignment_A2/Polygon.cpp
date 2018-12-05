@@ -1,14 +1,28 @@
 #include "Polygon.h"
 #include <iostream>
+#include <string>
 #include <fstream>
 
 using namespace std;
 
 Polygon::Polygon()
 {
-
-	ifstream inFile("../coordinates.txt");
-
+	ifstream inFile;
+	inFile.open("coordinates.txt");
+	if (inFile.good())
+	{
+		while (!inFile.eof())
+		{
+			int i = 0;
+			inFile >> vertices[i];
+			i++;
+		}
+	}
+	else
+	{
+		cout << "ERROR!" << endl;
+	}
+	inFile.close();
 }
 
 Polygon::~Polygon()
@@ -17,11 +31,14 @@ Polygon::~Polygon()
 
 string Polygon::getType()
 {
-	cout << "This shape's type is a Polygon." << endl;
-
-
+	type = "Polygon";
+	return type;	
 }
 int Polygon::circumference()
+{
+
+}
+int Polygon::position()
 {
 
 }
