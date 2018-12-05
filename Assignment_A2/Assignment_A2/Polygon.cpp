@@ -36,9 +36,9 @@ string Polygon::getType()
 }
 int Polygon::circumference()
 {
-
+	return 0;
 }
 int Polygon::position()
 {
-
+	return 0;
 }

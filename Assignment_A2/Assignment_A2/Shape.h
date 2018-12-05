@@ -6,6 +6,10 @@ using namespace std;
 class Shape
 {
 private:
+	static int vertices[];
+	string type;
+
+
 
 public:
 
