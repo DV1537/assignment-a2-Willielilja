@@ -1,18 +1,17 @@
-#include "Polygon.h"
+#include "Rectangle.h"
 
 #include <iostream>
 #include <string>
 #include <fstream>
 
-using namespace std;
 
-Polygon::Polygon()
+Rectangle::Rectangle()
 {
 	cap = 10;
 	vertices = new int[cap];
 
 	ifstream inFile;
-	inFile.open("coordinates.txt");
+	inFile.open("coordinates_2.txt");
 	if (inFile.good())
 	{
 		int i = 0;
@@ -32,20 +31,6 @@ Polygon::Polygon()
 	inFile.close();
 }
 
-Polygon::~Polygon()
+Rectangle::~Rectangle()
 {
-}
-
-string Polygon::getType()
-{
-	type = "Polygon";
-	return type;
-}
-int Polygon::circumference()
-{
-	return 0;
-}
-int Polygon::position()
-{
-	return 0;
 }

@@ -1,5 +1,8 @@
+#include "Point.h"
 #include "Shape.h"
 #include "Polygon.h"
+#include "Rectangle.h"
+
 #include <iostream>
 #include <fstream>
 #include <cmath>
@@ -10,7 +13,14 @@ int main()
 {
 
 	Polygon* foo = new Polygon();
-	foo = new Polygon[8];
+	/*foo = new Polygon[];*/
+
+	cout << endl;
+
+
+	Rectangle* boo = new Rectangle();
+
+
 
 
 	system("pause");

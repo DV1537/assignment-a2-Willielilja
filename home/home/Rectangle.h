@@ -1,17 +1,12 @@
 #pragma once
 #include "Point.h"
 #include "Shape.h"
-
-
-class Polygon : public Shape
+#include "Polygon.h"
+class Rectangle
 {
 public:
-	Polygon();
-	~Polygon();
-
-	string getType();
-	int circumference();
-	int position();
+	Rectangle();
+	~Rectangle();
 
 private:
 	int *vertices;
